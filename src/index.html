@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saludador Incremental</title>
+</head>
+<body>
+  <h1>Saludador</h1>
+
+  <label>Nombre:
+    <input id="nombre" type="text">
+  </label>
+  <br>
+
+  <label>Edad:
+    <input id="edad" type="number" min="0">
+  </label>
+  <br>
+
+  <label>Género:
+    <select id="genero">
+      <option value="">-- ninguno --</option>
+      <option value="M">Masculino</option>
+      <option value="F">Femenino</option>
+    </select>
+  </label>
+  <br>
+
+  <label>Idioma:
+    <select id="idioma">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+  </label>
+  <br><br>
+
+  <button id="btnSaludar">Saludar</button>
+
+  <h2 id="saludo"></h2>
+
+  <!-- 👇 importante: usar type="module" -->
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
