@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "e1f86b01aaa674d2fb831904c4c86849b28ca828",
     "author": "Carlitos",
     "commit": {
       "date": "2025-08-24T03:09:02.000Z",
       "message": "feat: saludador base (hola, nombre y hora) con pruebas",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/e1f86b01aaa674d2fb831904c4c86849b28ca828"
     },
     "stats": {
       "total": 45,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Carlitos",
+    "commit": {
+      "date": "2025-08-24T03:42:15.000Z",
+      "message": "feat: aplicar Sr./Sra. solo si edad >30 (greet con age) + pruebas",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 76,
+      "additions": 62,
+      "deletions": 14,
+      "date": "2025-08-24"
+    },
+    "coverage": 100,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }
