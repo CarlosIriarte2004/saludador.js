@@ -1,11 +1,5 @@
-// tests/saludador.test.js
-const {
-  greet,
-  saludoSegunHora,
-  tratamientoPorGeneroYEdad
-} = require("../src/saludador");
+const { greet, saludoSegunHora, tratamientoPorGeneroYEdad } = require("../src/saludador");
 
-// --- Incrementos 1–3 (ES): sin nombre / con nombre / hora (determinista)
 test("Sin nombre: usa saludo según hora (mañana, ES)", () => {
   expect(greet("", 9)).toBe("Buenos días!");
 });
@@ -18,7 +12,6 @@ test("Nombre con espacios se limpia (tarde, ES)", () => {
   expect(greet("  Ana  ", 15)).toBe("Buenas tardes, Ana!");
 });
 
-// --- Incremento 3: función auxiliar saludoSegunHora (ES)
 test("Saludo según hora de la mañana (ES)", () => {
   expect(saludoSegunHora(9)).toBe("Buenos días");
 });
@@ -31,11 +24,10 @@ test("Saludo según hora de la noche (ES)", () => {
   expect(saludoSegunHora(22)).toBe("Buenas noches");
 });
 
-// --- Incremento 4+5 (ES): tratamiento por género SOLO si edad > 30
 test("tratamientoPorGeneroYEdad respeta género y edad (ES)", () => {
   expect(tratamientoPorGeneroYEdad("F", 31)).toBe("Sra.");
   expect(tratamientoPorGeneroYEdad("M", 31)).toBe("Sr.");
-  expect(tratamientoPorGeneroYEdad("F", 30)).toBe(""); // <=30 no aplica
+  expect(tratamientoPorGeneroYEdad("F", 30)).toBe("");
 });
 
 test("Saludo con género femenino (mañana, edad >30, ES)", () => {
@@ -50,7 +42,6 @@ test("Sin género: no agrega título (noche, ES)", () => {
   expect(greet("Valeria", 22, null)).toBe("Buenas noches, Valeria!");
 });
 
-// --- Incremento 6 (EN): idioma inglés en saludo y tratamiento
 test("Sin nombre: usa saludo según hora (mañana, EN)", () => {
   expect(greet("", 9, null, null, "en")).toBe("Good morning!");
 });
